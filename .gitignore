@@ -2,3 +2,6 @@ bin
 obj
 .vs
 .csproj
+.json
+.targets
+props
