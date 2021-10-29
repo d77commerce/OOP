@@ -4,4 +4,4 @@ obj
 .csproj
 .json
 .targets
-props
+.props
