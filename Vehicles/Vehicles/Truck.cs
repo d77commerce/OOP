@@ -6,8 +6,8 @@ namespace Vehicles
 {
     public class Truck : Vehicle
     {
-        public Truck(double fuelQuantity, double consumption)
-            : base(fuelQuantity, consumption)
+        public Truck(double fuelQuantity, double consumption,double tankCapacity)
+            : base(fuelQuantity, consumption,tankCapacity)
         {
         }
 
@@ -28,7 +28,22 @@ namespace Vehicles
 
         public override void Refuel(double fuelInTo)
         {
-            FuelQuantity += (fuelInTo * 0.95);
+            if (TankCapacity >= fuelInTo + FuelQuantity && fuelInTo >0)
+            {
+                FuelQuantity += fuelInTo*0.95;
+            }
+            else
+            {
+                if (fuelInTo <= 0)
+                {
+                    Console.WriteLine("Fuel must be a positive number");
+
+                }
+                else
+                {
+                    Console.WriteLine($"Cannot fit {fuelInTo} fuel in the tank");
+                }
+            }
         }
     }
 }
