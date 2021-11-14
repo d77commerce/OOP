@@ -30,7 +30,7 @@ namespace WildFarm.animals
         }
         public override string ToString()
         {
-            return $"{GetType().Name} [{Name} {WingSize} {Weight} {FoodEaten}]";
+            return $"{GetType().Name} [{Name}, {WingSize}, {Weight}, {FoodEaten}]";
 
         }
     }
