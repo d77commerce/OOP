@@ -43,7 +43,7 @@ namespace ShoppingSpree
                 if (value < 0)
                 {
                     Console.WriteLine("Money cannot be negative");
-                    return;
+                    
                 }
                 else
                 {
