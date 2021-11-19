@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PizzaCalories
 {
-    class Pizza
+   public class Pizza
     {
     }
 }
