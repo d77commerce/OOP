@@ -24,7 +24,8 @@ namespace PizzaCalories
             get { return type; }
             private set
             {
-                if (value != "Meat" && value != "Veggies" && value != "Cheese" && value != "Sauce")
+                if (value.ToLower() != "meat" && value.ToLower() != "veggies" 
+                    && value.ToLower() != "cheese" && value.ToLower() != "sauce")
                 {
                     throw new Exception($"Cannot place {value} on top of your pizza.");
                 }
@@ -51,19 +52,19 @@ namespace PizzaCalories
 
 
             double calTopping = 0;
-            if (type == "Meat")
+            if (type.ToLower() == "meat")
             {
                 calTopping = grams * 1.5 * 2;
             }
-            else if (type == "Veggies")
+            else if (type.ToLower() == "veggies")
             {
                 calTopping = grams * 0.8 * 2;
             }
-            else if (type == "Cheese")
+            else if (type.ToLower() == "cheese")
             {
                 calTopping = grams * 1.1 * 2;
             }
-            else if (type == "Sauce")
+            else if (type.ToLower() == "sauce")
             {
                 calTopping = grams * 0.9 * 2;
             }

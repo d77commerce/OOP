@@ -13,9 +13,9 @@ namespace PizzaCalories
 
         Dictionary<string, double> bakingTexCalories = new Dictionary<string, double>
         {
-            {"Crispy", 0.9 },
-            {"Chewy",1.1 },
-            {"Homemade",1.0 }
+            {"crispy", 0.9 },
+            {"chewy",1.1 },
+            {"homemade",1.0 }
         };
         public Dough(string flourType, string baking, double grams)
         {
@@ -29,7 +29,7 @@ namespace PizzaCalories
             get { return flourType; }
            private set
             {
-                if (value != "White" && value != "Wholegrain")
+                if (value.ToLower() != "white" && value.ToLower() != "wholegrain")
                 {
                     throw new ArgumentException("Invalid type of dough.");
                 }
@@ -42,7 +42,7 @@ namespace PizzaCalories
         public string Baking
         {
             get { return baking; }
-           private set { baking = value; }
+           private set { baking = value.ToLower(); }
         }
 
 
