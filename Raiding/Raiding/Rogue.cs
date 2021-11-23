@@ -6,15 +6,14 @@ namespace Raiding
 {
     public class Rogue : BaseHero
     {
-        public Rogue(string name) : base(name)
+       private  const int powerRogue = 80;
+        public Rogue(string name)
+            : base(name,powerRogue)
         {
         }
-
-        public override int Power { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public override string CastAbility()
         {
-            throw new NotImplementedException();
+            return $"{GetType()} - { Name} hit for {Power} damage";
         }
     }
 }

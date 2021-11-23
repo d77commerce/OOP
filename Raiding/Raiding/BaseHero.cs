@@ -4,16 +4,17 @@ using System.Text;
 
 namespace Raiding
 {
-   public abstract class BaseHero
+   public abstract class BaseHero : Hero
     {
-        protected BaseHero(string name)
+        protected BaseHero(string name,int power)
         {
             Name = name;
-          
+            Power = power;
+            
         }
 
         public string Name { get; set; }
-        public abstract int Power { get; set; }
+        public  int Power { get; set; }
 
         public abstract string CastAbility();
        

@@ -6,14 +6,16 @@ namespace Raiding
 {
     public class Druid : BaseHero
     {
-        public Druid(string name) : base(name)
+        private const int powerDruid = 80;
+        public Druid(string name) 
+            : base(name,powerDruid)
         {
         }
 
 
         public override string CastAbility()
         {
-            throw new NotImplementedException();
+           return $"{GetType()} - {Name} healed for {Power}";
         }
     }
 }

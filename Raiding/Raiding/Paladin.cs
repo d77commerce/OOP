@@ -6,13 +6,14 @@ namespace Raiding
 {
     public class Paladin : BaseHero
     {
-        public Paladin(string name) : base(name)
+        private const int powerPaladin = 100;
+        public Paladin(string name) : base(name,powerPaladin)
         {
         }
 
         public override string CastAbility()
         {
-            throw new NotImplementedException();
+            return $"{GetType()} - {Name} healed for {Power}";
         }
     }
 }
