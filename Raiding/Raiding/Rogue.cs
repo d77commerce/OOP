@@ -13,7 +13,7 @@ namespace Raiding
         }
         public override string CastAbility()
         {
-            return $"{GetType()} - { Name} hit for {Power} damage";
+            return $"{GetType().Name} - { Name} hit for {Power} damage";
         }
     }
 }

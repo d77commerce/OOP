@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Raiding
 {
-    class Warrior : BaseHero
+   public class Warrior : BaseHero
     {
         private const int powerWarrior = 100;
         public Warrior(string name) 
@@ -14,7 +14,7 @@ namespace Raiding
 
         public override string CastAbility()
         {
-            return $"{GetType()} - {Name} hit for {Power} damage";
+            return $"{GetType().Name} - {Name} hit for {Power} damage";
         }
     }
 }

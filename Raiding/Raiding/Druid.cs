@@ -15,7 +15,7 @@ namespace Raiding
 
         public override string CastAbility()
         {
-           return $"{GetType()} - {Name} healed for {Power}";
+           return $"{GetType().Name} - {Name} healed for {Power}";
         }
     }
 }

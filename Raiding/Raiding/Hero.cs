@@ -8,5 +8,6 @@ namespace Raiding
     {
         public string Name { get; set; }
         int Power { get; }
+        public string CastAbility();
     }
 }
