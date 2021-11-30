@@ -8,7 +8,7 @@ namespace Prototype
 {
     public abstract class SandwichPrototype
     {
-        protected abstract SandwichPrototype Clone();
+       public abstract SandwichPrototype Clone();
        
     }
 }
