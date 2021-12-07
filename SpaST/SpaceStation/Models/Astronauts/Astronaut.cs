@@ -34,7 +34,7 @@ namespace SpaceStation.Models.Astronauts
         public double Oxygen
         {
             get => oxygen;
-            set
+           protected set
             {
                 if(value <= 0)
                 {
@@ -49,9 +49,16 @@ namespace SpaceStation.Models.Astronauts
 
         public IBag Bag { get; set; }
 
-        public void Breath()
+        public virtual void Breath()
         {
-            throw new NotImplementedException();
+           if (this.Oxygen - 10 < 0)
+            {
+                this.Oxygen = 0;
+            }
+            else
+            {
+                this.Oxygen -= 10;
+            }
         }
     }
 }
