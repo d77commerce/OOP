@@ -10,7 +10,7 @@ namespace SpaceStation.Models.Planets
     {
         private string name;
 
-        public Planet(string name)
+        public Planet(string name, string[] items)
         {
             Name = name;
             this.Items = new List<string>();
