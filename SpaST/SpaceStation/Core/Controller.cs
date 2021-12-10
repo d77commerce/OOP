@@ -4,6 +4,7 @@ using SpaceStation.Models.Astronauts;
 using SpaceStation.Models.Astronauts.Contracts;
 using SpaceStation.Models.Planets;
 using SpaceStation.Models.Planets.Contracts;
+using SpaceStation.Repositories;
 using SpaceStation.Repositories.Contracts;
 using SpaceStation.Utilities.Messages;
 using System;
@@ -14,11 +15,12 @@ namespace SpaceStation.Core
 {
     class Controller : IController
     {
-        public  IRepository<IAstronaut> astronautRepository;
-        public readonly IRepository<IPlanet> planetRepository;
+        private readonly  IRepository<IAstronaut> astronautRepository;
+       private readonly IRepository<IPlanet> planetRepository;
         public Controller()
         {
-
+            this.astronautRepository = new AstronautRepository();
+            this.planetRepository = new PlanetRepository();
         }
         public string AddAstronaut(string type, string astronautName)
         {
