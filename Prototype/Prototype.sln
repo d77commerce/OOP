@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNull", "TestNull\TestNull.csproj", "{3E052909-6CD9-48C7-8D57-0368D8F61DDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTest", "StackTest\StackTest.csproj", "{984DD9C6-7D32-4F40-847F-6076678ECB36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackTest", "StackTest\StackTest.csproj", "{984DD9C6-7D32-4F40-847F-6076678ECB36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficJam", "TrafficJam\TrafficJam.csproj", "{E525A738-1D16-4729-B97E-4D3D0512C2AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicStackOperations", "BasicStackOperations\BasicStackOperations.csproj", "{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{984DD9C6-7D32-4F40-847F-6076678ECB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{984DD9C6-7D32-4F40-847F-6076678ECB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{984DD9C6-7D32-4F40-847F-6076678ECB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E525A738-1D16-4729-B97E-4D3D0512C2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E525A738-1D16-4729-B97E-4D3D0512C2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E525A738-1D16-4729-B97E-4D3D0512C2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E525A738-1D16-4729-B97E-4D3D0512C2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
