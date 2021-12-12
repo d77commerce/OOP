@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNull", "TestNull\TestNu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackTest", "StackTest\StackTest.csproj", "{984DD9C6-7D32-4F40-847F-6076678ECB36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficJam", "TrafficJam\TrafficJam.csproj", "{E525A738-1D16-4729-B97E-4D3D0512C2AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficJam", "TrafficJam\TrafficJam.csproj", "{E525A738-1D16-4729-B97E-4D3D0512C2AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicStackOperations", "BasicStackOperations\BasicStackOperations.csproj", "{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicStackOperations", "BasicStackOperations\BasicStackOperations.csproj", "{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumAndMinimumElement", "MaximumAndMinimumElement\MaximumAndMinimumElement.csproj", "{D92F3AA3-B79F-434B-A150-5447A710BC03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05EEBF3A-C24D-482A-8B0F-7A7808B58F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92F3AA3-B79F-434B-A150-5447A710BC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92F3AA3-B79F-434B-A150-5447A710BC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92F3AA3-B79F-434B-A150-5447A710BC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92F3AA3-B79F-434B-A150-5447A710BC03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
