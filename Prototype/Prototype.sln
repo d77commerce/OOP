@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2x2", "2x2\2x2.csproj", "{3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSum3345", "MaxSum3345\MaxSum3345.csproj", "{8AE6EE11-4351-4139-8812-7781859BA603}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixShuffling", "MatrixShuffling\MatrixShuffling.csproj", "{607C8D1B-6C7D-4169-AA30-F7FD25FCD1A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith", "Blacksmith\Blacksmith.csproj", "{B31F410B-29B0-4182-B531-0E9C26408B3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{8AE6EE11-4351-4139-8812-7781859BA603}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AE6EE11-4351-4139-8812-7781859BA603}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AE6EE11-4351-4139-8812-7781859BA603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607C8D1B-6C7D-4169-AA30-F7FD25FCD1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607C8D1B-6C7D-4169-AA30-F7FD25FCD1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607C8D1B-6C7D-4169-AA30-F7FD25FCD1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607C8D1B-6C7D-4169-AA30-F7FD25FCD1A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31F410B-29B0-4182-B531-0E9C26408B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31F410B-29B0-4182-B531-0E9C26408B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31F410B-29B0-4182-B531-0E9C26408B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31F410B-29B0-4182-B531-0E9C26408B3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

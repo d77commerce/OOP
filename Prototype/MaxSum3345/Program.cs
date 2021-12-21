@@ -7,13 +7,13 @@ namespace MaxSum3345
     {
         static void Main(string[] args)
         {
-            int[] input = (Console.ReadLine()).Split(" ").Select(int.Parse).ToArray();
+            int[] input = (Console.ReadLine()).Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
             int[,] matrix = new int[input[0], input[1]];
             int[,] outMatrix = new int[3, 3];
-            int count = 0;
+            int count = int.MinValue;
             for (int row = 0; row < input[0]; row++)
             {
-                int[] currentRow = Console.ReadLine().Split().Select(int.Parse).ToArray();
+                int[] currentRow = Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
                 for (int col = 0; col < input[1]; col++)
                 {
                     matrix[row, col] = currentRow[col];
@@ -45,9 +45,9 @@ namespace MaxSum3345
             }
             Console.WriteLine($"Sum = {count}");
 
-            for (int row = 0; row < outMatrix.GetLength(0); row++)
+            for (int row = 0; row < 3; row++)
             {
-                for (int col = 0; col < outMatrix.GetLength(1); col++)
+                for (int col = 0; col < 3; col++)
                 {
                     Console.Write(outMatrix[row, col]+" ");
                 }
