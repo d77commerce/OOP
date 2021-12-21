@@ -5,16 +5,15 @@ using System.Text;
 
 namespace PolymorphismVehicles
 {
-    internal class Truck : IVehicle
+    public class Bus : IVehicle
     {
         private double fuelQuantity;
 
-        public Truck(double fuelQuantity, double fuelPerKm, double tankCapacity)
+        public Bus(double fuelQuantity, double fuelPerKm, double tankCapacity)
         {
-
+            FuelQuantity = fuelQuantity;
             FuelPerKm = fuelPerKm;
             TankCapacity = tankCapacity;
-            FuelQuantity = fuelQuantity;
         }
 
         public double FuelQuantity
@@ -32,12 +31,23 @@ namespace PolymorphismVehicles
         public double FuelPerKm { get; set; }
         public double TankCapacity { get; set; }
 
-
+        public void DriveEmpty(double distans)
+        {
+            if (FuelQuantity - (distans * FuelPerKm) >= 0)
+            {
+                FuelQuantity -= distans * FuelPerKm;
+                Console.WriteLine($"{GetType().Name} travelled {distans} km");
+            }
+            else
+            {
+                Console.WriteLine($"{GetType().Name} needs refueling");
+            }
+        }
         public void Drive(double distans)
         {
-            if (FuelQuantity - (distans * (FuelPerKm + 1.6)) >= 0)
+            if (FuelQuantity - (distans * FuelPerKm) >= 0)
             {
-                FuelQuantity -= distans * (FuelPerKm + 1.6);
+                FuelQuantity -= distans * (FuelPerKm+1.4);
                 Console.WriteLine($"{GetType().Name} travelled {distans} km");
             }
             else
@@ -53,15 +63,14 @@ namespace PolymorphismVehicles
                 Console.WriteLine("Fuel must be a positive number");
                 return;
             }
-            if (liters + FuelQuantity > TankCapacity)
+           if (liters + FuelQuantity > TankCapacity)
             {
                 Console.WriteLine($"Cannot fit {liters} fuel in the tank");
             }
             else
             {
-                FuelQuantity += liters * 0.95;
+                FuelQuantity += liters;
             }
         }
-
     }
 }
