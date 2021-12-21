@@ -22,9 +22,9 @@ namespace PolymorphismVehicles
        
         public void Drive(double distans)
         {
-           if(FuelQuantity-(distans * FuelPerKm * 0.9) >= 0)
+           if(FuelQuantity-(distans * (FuelPerKm + 0.9)) >=0)
             {
-                FuelQuantity -= distans * FuelPerKm * 0.9;
+                FuelQuantity -= distans * (FuelPerKm + 0.9);
                 Console.WriteLine($"{GetType().Name} travelled {distans} km");
             }
             else
