@@ -6,9 +6,9 @@ namespace PolymorphismVehicles
     {
         static void Main(string[] args)
         {
-            var inputCar = Console.ReadLine().Split(" ");
-            var inputTruck = Console.ReadLine().Split(" ");
-            var inputBUS = Console.ReadLine().Split(" ");
+            var inputCar = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            var inputTruck = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            var inputBUS = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             Car car = new Car(double.Parse(inputCar[1]), double.Parse(inputCar[2]), double.Parse(inputCar[3]));
             Truck truck = new Truck(double.Parse(inputTruck[1]), double.Parse(inputTruck[2]), double.Parse(inputTruck[3]));
             Bus bus = new Bus(double.Parse(inputBUS[1]), double.Parse(inputBUS[2]), double.Parse(inputBUS[3]));
@@ -34,9 +34,9 @@ namespace PolymorphismVehicles
                             truck.Drive(argument);
 
                         }
-                        else if(typeVehicle == "Bus")
+                        else if (typeVehicle == "Bus")
                         {
-                            bus.Drive(argument);    
+                            bus.Drive(argument);
                         }
                         break;
                     case "DriveEmpty":

@@ -11,11 +11,11 @@ namespace PolymorphismVehicles
 
         public Bus(double fuelQuantity, double fuelPerKm, double tankCapacity)
         {
-            FuelQuantity = fuelQuantity;
             FuelPerKm = fuelPerKm;
             TankCapacity = tankCapacity;
+            FuelQuantity = fuelQuantity;
         }
-
+        public double TankCapacity { get; set; }
         public double FuelQuantity
         {
             get => fuelQuantity;
@@ -24,18 +24,23 @@ namespace PolymorphismVehicles
                 if (value > TankCapacity)
                 {
                     fuelQuantity = 0;
+
                 }
-                fuelQuantity = value;
+                else
+                {
+                    fuelQuantity = value;
+                }
+
             }
         }
         public double FuelPerKm { get; set; }
-        public double TankCapacity { get; set; }
+
 
         public void DriveEmpty(double distans)
         {
-            if (FuelQuantity - (distans * FuelPerKm) >= 0)
+            if (fuelQuantity - (distans * FuelPerKm) >= 0)
             {
-                FuelQuantity -= distans * FuelPerKm;
+                fuelQuantity -= distans * FuelPerKm;
                 Console.WriteLine($"{GetType().Name} travelled {distans} km");
             }
             else
@@ -45,9 +50,9 @@ namespace PolymorphismVehicles
         }
         public void Drive(double distans)
         {
-            if (FuelQuantity - (distans * FuelPerKm) >= 0)
+            if (fuelQuantity - (distans * (FuelPerKm+1.4)) >= 0)
             {
-                FuelQuantity -= distans * (FuelPerKm+1.4);
+                fuelQuantity -= distans * (FuelPerKm + 1.4);
                 Console.WriteLine($"{GetType().Name} travelled {distans} km");
             }
             else
@@ -61,15 +66,15 @@ namespace PolymorphismVehicles
             if (liters <= 0)
             {
                 Console.WriteLine("Fuel must be a positive number");
-                return;
+
             }
-           if (liters + FuelQuantity > TankCapacity)
+            else if (liters + fuelQuantity > TankCapacity)
             {
                 Console.WriteLine($"Cannot fit {liters} fuel in the tank");
             }
             else
             {
-                FuelQuantity += liters;
+                fuelQuantity += liters;
             }
         }
     }

@@ -12,11 +12,14 @@ namespace PolymorphismVehicles
 
         public Car(double fuelQuantity, double fuelPerKm, double tankCapacity)
         {
-            FuelQuantity = fuelQuantity;
+
             FuelPerKm = fuelPerKm;
             TankCapacity = tankCapacity;
+           
+                FuelQuantity = fuelQuantity;
+           
         }
-
+        public double TankCapacity { get; set; }
         public double FuelQuantity
         {
             get => fuelQuantity;
@@ -25,18 +28,23 @@ namespace PolymorphismVehicles
                 if (value > TankCapacity)
                 {
                     fuelQuantity = 0;
+
                 }
-                fuelQuantity = value;
+                else
+                {
+                    fuelQuantity = value;
+                }
+
             }
         }
         public double FuelPerKm { get; set; }
-        public double TankCapacity { get; set; }
+
 
         public void Drive(double distans)
         {
-            if (FuelQuantity - (distans * (FuelPerKm + 0.9)) >= 0)
+            if (fuelQuantity - (distans * (FuelPerKm + 0.9)) >= 0)
             {
-                FuelQuantity -= distans * (FuelPerKm + 0.9);
+                fuelQuantity -= distans * (FuelPerKm + 0.9);
                 Console.WriteLine($"{GetType().Name} travelled {distans} km");
             }
             else
@@ -46,19 +54,19 @@ namespace PolymorphismVehicles
         }
 
         public void Refil(double liters)
-        {  
+        {
             if (liters <= 0)
             {
                 Console.WriteLine("Fuel must be a positive number");
-                return;
+
             }
-            if (liters + FuelQuantity > TankCapacity)
+            else if (liters + fuelQuantity > TankCapacity)
             {
-                Console.WriteLine($"Cannot fit {liters} fuel in the tank"); 
-            }     
+                Console.WriteLine($"Cannot fit {liters} fuel in the tank");
+            }
             else
             {
-                FuelQuantity += liters;
+                fuelQuantity += liters;
             }
         }
     }
