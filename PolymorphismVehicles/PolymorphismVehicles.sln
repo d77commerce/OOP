@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolymorphismVehicles", "PolymorphismVehicles\PolymorphismVehicles.csproj", "{B5F65AD9-0F6A-487B-AB7D-84BDE4CE6474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolymorphismVehicles", "PolymorphismVehicles\PolymorphismVehicles.csproj", "{B5F65AD9-0F6A-487B-AB7D-84BDE4CE6474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raiding3", "Raiding3\Raiding3.csproj", "{2624EC1B-19D6-4194-B97C-9909E87C133F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B5F65AD9-0F6A-487B-AB7D-84BDE4CE6474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5F65AD9-0F6A-487B-AB7D-84BDE4CE6474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5F65AD9-0F6A-487B-AB7D-84BDE4CE6474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2624EC1B-19D6-4194-B97C-9909E87C133F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2624EC1B-19D6-4194-B97C-9909E87C133F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2624EC1B-19D6-4194-B97C-9909E87C133F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2624EC1B-19D6-4194-B97C-9909E87C133F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
